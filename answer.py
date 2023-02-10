@@ -135,7 +135,7 @@ def dictionary_nested():
 
     # Get the third item in the list that key "job" maps to. (the item  you recently added)
     
-    job = Grace['jobs']
+    job = Grace['jobs'][2]
 
 
 
