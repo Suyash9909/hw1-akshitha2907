@@ -46,7 +46,7 @@ def list_1D():
     """
     This is to review basic operations with lists.
     """
-    s = " hoboken,is,awesome,i,like,it "
+    s = "hoboken,is,awesome,i,like,it "
     #Remove whitespace characters on both side and assign it to a new variable hoboken.
 
     hoboken = "s".strip()
