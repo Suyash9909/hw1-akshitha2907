@@ -29,7 +29,7 @@ def strings():
 
     # What is the length of stevens_7?
 
-    length = len(stevens)
+    length = len(stevens_7)
 
     # Concatenate variable stevens with string " is great" and assign it to variable great.
 
@@ -37,7 +37,7 @@ def strings():
 
     # Replace "great" with "good" in variable great and assign it to a new variable good.
 
-    good = stevens + 'is good'
+    good = great.replace("great","good")
 
     return stevens, stevens_7, length, great, good
 
@@ -49,15 +49,15 @@ def list_1D():
     s = "hoboken,is,awesome,i,like,it "
     #Remove whitespace characters on both side and assign it to a new variable hoboken.
 
-    hoboken = "s".strip()
+    hoboken = s.lstrip().rstrip()
 
     # Split variable hoboken on a delimiter(comma) into a list of substrings and assign it to a new variable hoboken_list.
 
-    hoboken_list = s.split,
+    hoboken_list = hoboken.split(",")
 
     # Get the first item in the hoboken_list and assign it to a new variable hoboken_first_item.
 
-    hoboken_first_item = s[0]
+    hoboken_first_item = hoboken_list[0]
 
     ####
     l=[2,3,4,1,5,6,9,10,15,12,13,-2,-6,0,0]
@@ -67,7 +67,7 @@ def list_1D():
 
     # Get the 4th to 10th item in sorted list l and assign them to a new list new_l.
 
-    new_l = s[3:11]
+    new_l = [l[i] for i in range(len(l)) if i>2 and i<10]
 
     return hoboken,hoboken_list, hoboken_first_item, l, new_l
 
@@ -105,13 +105,14 @@ def dictionary():
     #   "fruit" => "apple"
     #   "quantity" => 18
     #   "color" => "red"
-    fruit_dict = { 'fruit': 'apple', 'quantity' : '18', 'color' :'red'}
+    fruit_dict = { 'fruit': 'apple', 'quantity' : 18, 'color' :'red'}
     
     # Get the item in dictionary fruit_dict that the key "fruit" maps to.
 
     f = fruit_dict['fruit']
 
     # Increase the value that key "quantity" map to by 1.
+    fruit_dict['quantity']+= 1
 
 
     return fruit_dict, f
@@ -129,7 +130,7 @@ def dictionary_nested():
     last_name = Grace['name']['last_name']
 
     # Add "programmer" to the list that key "jobs" maps to.
-
+    Grace['jobs'].append('programmer')
 
 
     # Get the third item in the list that key "job" maps to. (the item  you recently added)
