@@ -21,23 +21,23 @@ def strings():
 
     # Assign a string "stevens" to a variable stevens.
 
-    stevens = a
+    stevens = "stevens"
 
     # Repeat variable stevens 7 times and assign it to variable stevens_7.
 
-    stevens_7 = a*7
+    stevens_7 = stevens*7
 
     # What is the length of stevens_7?
 
-    length = len(a)
+    length = len(stevens)
 
     # Concatenate variable stevens with string " is great" and assign it to variable great.
 
-    great = a + 'is great'
+    great = stevens + 'is great'
 
     # Replace "great" with "good" in variable great and assign it to a new variable good.
 
-    good = a + 'is good'
+    good = stevens + 'is good'
 
     return stevens, stevens_7, length, great, good
 
@@ -53,7 +53,7 @@ def list_1D():
 
     # Split variable hoboken on a delimiter(comma) into a list of substrings and assign it to a new variable hoboken_list.
 
-    hoboken_list = s.split(,)
+    hoboken_list = s.split,
 
     # Get the first item in the hoboken_list and assign it to a new variable hoboken_first_item.
 
@@ -67,7 +67,7 @@ def list_1D():
 
     # Get the 4th to 10th item in sorted list l and assign them to a new list new_l.
 
-    new_l = s.[3:11]
+    new_l = s[3:11]
 
     return hoboken,hoboken_list, hoboken_first_item, l, new_l
 
@@ -121,7 +121,7 @@ def dictionary_nested():
     #   "jobs" => ["scientist", "engineer"] (a list)
     #   "age" => 85
 
-    Grace = { 'name' : {'first_name ' : 'Grace' , 'last_name' : 'Hopper'},
+    rec = { 'name' : {'first_name ' : 'Grace' , 'last_name' : 'Hopper'},
              'jobs' : ['scientists', 'engineer'],
              'age' : 85 } 
     # Get the value of key "last_name" from the subdictionary of key "name" in dictionary Grace. (aka."Hopper")
@@ -138,7 +138,7 @@ def dictionary_nested():
 
 
 
-    return Grace,last_name, job
+    return rec,last_name, job
 
 
 
